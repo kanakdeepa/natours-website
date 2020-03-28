@@ -1,0 +1,26 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "concurrently \"npm run compile:sass\" \"live-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanakdeepa/natours-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanakdeepa/natours-website/issues"
+  },
+  "homepage": "https://github.com/kanakdeepa/natours-website#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "node-sass": "^4.13.1",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {}
+}
