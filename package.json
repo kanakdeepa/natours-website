@@ -1,0 +1,28 @@
+{
+  "name": "natours",
+  "homepage": "http://kanakdeepa.github.io/natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "concurrently \"npm run compile:sass\" \"live-server\"",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanakdeepa/natours-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanakdeepa/natours-website/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "gh-pages": "^2.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {}
+}
